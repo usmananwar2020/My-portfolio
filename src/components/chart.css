@@ -1,0 +1,24 @@
+.LineChart{
+    width: 72%;
+    height: 40vh;
+}
+.BubbleChart{
+    width: 72%;
+    height: 40vh;
+    margin-top: 20%;
+}
+.BarChart{
+    width: 72%;
+    height: 40vh;
+    margin-top: 20%;
+}
+.PieChart{
+    width: 72%;
+    height: 40vh;
+    margin-top: 20%;
+}
+.DoughnutChart{
+    width: 72%;
+    height: 40vh;
+    margin-top: 20%;
+}

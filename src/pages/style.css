@@ -1,0 +1,364 @@
+
+.Container{
+    background-image: url('./images/bg.jpg');
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+.top-btn{
+    visibility: hidden;
+}
+#top-btn.topBtnShow{
+    visibility: visible;
+}
+#header.sticky {
+    margin-top: -20px;
+    /* padding-top: 0px; */
+    background-color: #fff;
+    border-bottom : 1px solid(0,0,0,0.1);
+}
+#header.sticky .logo{
+    color: #000;
+}
+#header.sticky .menu ul li a{
+    color: black;
+}
+.navbar{
+    position:fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;            
+    padding: 10px 10px 0px 20px; 
+    z-index: 10;
+    transition: .6s;
+}
+.menu ul li{
+    display: flex;
+    justify-content: center;
+    float: left;
+    padding-right: 25px;   
+    color: white;
+    cursor: pointer;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* .menu ul {
+    margin-right: 100px;
+} */
+.logo{
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    /* margin-left: 50px; */
+    margin-top:15px;
+    padding-bottom: 10px;
+}
+.slider-heading{
+    font-size: 60px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.slider-heading p{
+    color: blue;
+}
+@media screen and (max-width: 1200px) {
+    .logo{
+        margin-left: 10%;
+    }
+    .slider-heading{
+        margin-left: 10%;
+        font-size: 50px;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 1000px) {
+.navbar{
+        /* width: 1000px; */
+        display: grid;
+        justify-content: center;
+      }
+.menu ul{
+    margin-right: 80%;
+}
+.logo{
+    margin-left: 5%;
+}
+.slider-heading{
+    margin-left: 20%;
+    font-size: 40px;
+    margin-right: 10%;
+}
+#header.sticky{
+    margin-top: 0px;
+}
+}
+@media screen and (max-width: 550px) {
+.slider-heading{
+    margin-left: 20%; 
+    font-size: 30px;
+    margin-right: 10%;
+    }
+}
+.top-btn img{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    margin-top: -50px;
+    margin-left: 96%;
+}
+.about{
+    padding-top: 10%;
+    margin-top: 9.3%;
+    height: 100vh;
+    background-image: url('./images/10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.about div{
+    width: 100%;
+}
+.about div label{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    margin-left: 40%;
+}
+.about div p{
+    margin-left: 10%;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:1024px)
+{
+.about div p{
+    background-size:contain;
+    margin-left: 10%; 
+}
+.about{
+    display: grid;
+}
+} 
+
+.services{
+    padding-top: 10%;
+    height: 100vh;
+    background-color: #0581ca;
+background-image: linear-gradient(90deg, #0581ca 0%, #80D0C7 61%);
+
+}
+.services label{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.services p{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+}
+.flip-card-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%; 
+}
+@media screen and (max-width: 1024px) {
+    .services{
+        height: 230vh;
+    }
+    .flip-card-main{
+        display: grid;
+        justify-content: center;
+        margin-top: 10px; 
+    }
+    .flip-card{
+        margin-top: 15px;
+    }
+    }
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* margin: (0px 50px 0px 500px); */
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    z-index: 1;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+.flip-card-front {
+    background-color: #fff;
+}
+.icon img{
+    margin-top: 10%;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;  
+}
+.flip-h3{
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.flip-card-front p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 80%;
+    margin-left: 10%;
+}
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+  }
+
+  .flip-card-back img{
+    margin-top: 10px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }
+.achievements-main{
+    clip-path: polygon(50% 23%, 100% 0, 100% 100%, 0 100%, 0 0);
+    background: #000;
+    height: 120vh;
+}
+  .achievements{
+    /* height: 100vh; */
+    padding-top: 10%;
+    background-color: #000;
+    margin-top: -13%;
+
+}
+.achievements label{
+    padding-top: 15%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.achievements p{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.counter{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 15px;
+
+}
+.countUp{
+    color: #fff;
+    font-size: 30px;
+}
+@media screen and (max-width:1024px)
+{
+    .achievements-main{
+        clip-path: polygon(100% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+        height: 130vh;
+    }
+    .counter{
+        display: grid;
+    }
+}
+
+.portfolio{
+    /* margin-top: 10%; */
+    padding-top: 5%;
+    height: 130vh;
+    background-image: linear-gradient(45deg, #ff9e9e 0%, #fed0c4 99%, #fed0c4 100%);
+}
+.portfolio label{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.portfolio p{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+}
+.h3-title{
+    margin-top: 10%;
+}
+
+.flip-card-port {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .flip-card-inner a{
+      text-decoration: none;
+      color: black;
+  }
+  /* .flip-card-port:hover .flip-card-inner {
+    transform: rotateX(360deg);
+    color: blue;
+    text-transform: lowercase;
+  }
+  */
+  .flip-card-port h3:hover  {
+    transform: rotate(360deg);
+    transition: 0.5s;
+    color:blue;
+    cursor: pointer;
+     
+  }
+  @media screen and (max-width:1024px)
+  {
+      .portfolio{
+          height: 380vh;
+      }
+      .flip-card-port{
+          margin-top: 10px;
+      }
+  }
