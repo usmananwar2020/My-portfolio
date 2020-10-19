@@ -30,6 +30,7 @@ function Home() {
                         <li ><Link smooth to='#achievements'>Achievements</Link></li>
                         <li ><Link smooth to='#portfolio'>Portfolio</Link> </li> </ul></Router>
                     </div>
+                    
                 </div>
                 <h1 className="slider-heading">We Are <br /><br /><p><br />Professional<br /></p><br /><br /> Web Developers</h1>
                 < About />
